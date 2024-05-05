@@ -19,8 +19,8 @@ export function initRepoMigration() {
 
   user?.addEventListener('input', () => {checkItems(false)});
   pass?.addEventListener('input', () => {checkItems(false)});
-  token?.addEventListener('input', () => {checkItems(true)});
-  mirror?.addEventListener('change', () => {checkItems(true)});
+  token?.addEventListener('input', () => {checkItems(false)});
+  mirror?.addEventListener('change', () => {checkItems(false)});
   document.getElementById('lfs_settings_show')?.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
